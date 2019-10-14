@@ -1,0 +1,133 @@
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#login_student, html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: #328eb4 url("../images/download.png") 0 0 repeat-x;
+}
+
+#login_student>h1 {
+	display: inline-block;
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+	font-family: "SimHei", 黑体;
+	font-size: 56px;
+	color: #ACCFDE;
+}
+
+#login_student>.login {
+	width: 358px;
+	height: 252px;
+	position: absolute;
+	top: 50%;
+	margin-top: -121px;
+	margin-left: -179px;
+	left: 50%;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	background: #fff;
+}
+
+#login_student>.login>.login_head {
+	width: 358px;
+	height: 37px;
+	background: #F5F5F5;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-bottom: 1px solid #DDD;
+	line-height: 37px;
+}
+
+#login_student>.login>.login_head>h1 {
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 15px;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	font-weight: 100;
+}
+
+#login_student>.login>.login_head>span {
+	display: inline-block;
+	font-size: 12px;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	color: #777;
+}
+
+#login_student>.login>.login_con {
+	position: absolute;
+	top: 38px;
+	left: 0px;
+	width: 358px;
+	height: 215px;
+}
+
+#login_student>.login>.login_con>.login_rad {
+	padding: 15px;
+	color: #777;
+	font-family: "Microsoft YaHei", 微软雅黑;
+}
+
+#login_student>.login>.login_con>.login_rad>.login_rad1 {
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+#login_student>.login>.login_con>.login_rad>.login_rad2 {
+	margin-left: 15px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+#login_student>.login>.login_con>.login_rad>label {
+	cursor: pointer;
+}
+
+#login_student>.login>.login_con>input {
+	display: block;
+	width: 302px;
+	margin: 0px auto;
+	height: 20px;
+	padding: 6px 12px;
+	margin-top: 15px;
+	color: #999;
+}
+
+#login_student>.login>.login_con>p {
+	position: absolute;
+	bottom: 15px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	width: 110px;
+	height: 40px;
+	font-size: 18px;
+	background: #2C759A;
+	border-radius: 2px;
+	margin-top: 20px;
+	letter-spacing: 4px;
+}
+
+#login_student>.login>.login_con>p:hover {
+	background: #598FAB;
+}
+
+#login_student>.login>.login_con>.loginin {
+	width: 330px;
+	left: 15px;
+}
+
+#login_student>.login>.login_con>.reg {
+	right: 35px;
+}

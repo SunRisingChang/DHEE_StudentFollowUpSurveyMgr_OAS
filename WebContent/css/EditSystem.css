@@ -1,0 +1,525 @@
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+#main2 {
+	position: relative;
+	height: 100%;
+	font-family: "Microsoft YaHei", 微软雅黑;
+}
+/*测导航栏*/
+#main2 #src-left-nav {
+	position: fixed;
+	height: 100%;
+	width: 18%;
+	min-width: 175px;
+	background: #F8F8F8;
+	top: 51px;
+	left: 0px;
+	border-right: 1px solid #e7e7e7;
+}
+#main2 #src-left-nav>ul {
+	height: auto;
+	width: 100%;
+	list-style: none;
+	margin: 0px;
+}
+#main2 #src-left-nav>ul>li {
+	color: #337AB7;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 14px;
+	cursor: pointer;
+}
+#main2 #src-left-nav>ul>li:hover {
+	background: #eeeeee;
+}
+#main2 #src-left-nav>ul>li>i {
+	display: inline-block;
+	text-align: center;
+	width: 20px;
+	margin: 0px 4px 0px 20px;
+}
+/*内容区*/
+#main2 #con {
+	position: relative;
+	top: 0px;
+	left: 18%;
+	width: 82%;
+	overflow: hidden;
+	height: 100%;
+	min-width: 900px;
+	display: none;
+}
+#main2 #con>ul{
+	position: absolute;
+	height: 60%;
+	width: 300px;
+	list-style: none;
+	top: 20%;
+}
+#main2 #con>ul:nth-child(1){
+	margin-left: -150px;
+	left: 30%;
+}
+#main2 #con>ul:nth-child(1)>li{
+	position: relative;
+	width: 295px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 2px;
+	text-indent: 15px;
+	border-left: 5px solid #5cb85c;
+	background: #337ab7;
+	overflow: hidden;
+	color: #fff;
+}
+#main2 #con>ul:nth-child(1)>li:hover,#main2 #con>ul:nth-child(1)>.show_edit{
+	border-left: 5px solid #337ab7;
+	background: #F8F8F8;
+	color: #000;
+}
+#main2 #con>ul:nth-child(1)>li>i{
+	position: absolute;
+	display: inline-block;
+	width: 15px;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 5px;
+	text-indent: 0px;
+}
+#main2 #con>ul:nth-child(1)>li>i:nth-child(1){
+	right: 2px;
+}
+#main2 #con>ul:nth-child(1)>li>i:nth-child(1):hover,#main2 #con>ul:nth-child(1)>li>.show_xq{
+	color: #4ed361;
+	cursor: pointer;
+}
+#main2 #con>ul:nth-child(1)>li>i:nth-child(2){
+	right: 24px;
+}
+#main2 #con>ul:nth-child(1)>li>i:nth-child(2):hover,#main2 #con>ul:nth-child(1)>li>.edit{
+	color:rgba(196,140,228,1.00);
+	cursor: pointer;
+}
+#main2 #con>ul:nth-child(1)>li>i:nth-child(3){
+	right: 46px;
+}
+#main2 #con>ul:nth-child(1)>li>i:nth-child(3):hover{
+	color: #40affe;
+	cursor: pointer;
+}
+#main2 #con .jiags{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	width: 300px;
+	top: 80%;
+	margin-left: -150px;
+	left: 30%;
+	background: #337ab7;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 18px;
+	transition: all 0.3s;
+}
+#main2 #con .jiags:hover{
+	color: #337ab7;
+	background: #F8F8F8;
+	border: 2px solid #E7E7E7;
+	cursor: pointer;
+}
+#main2 #con>.ul2{
+	margin-right:-150px;
+	right: 30%;
+	width: 280px;
+	display:none;
+}
+#main2 #con>.ul2>li{
+	position: relative;
+	width: 275px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 2px;
+	text-indent: 15px;
+	border-left: 5px solid #337ab7;
+	background: #F8F8F8;
+	overflow: hidden;
+}
+#main2 #con>.ul2>li:hover,#main2 #con>.ul2>.show_edit2{
+	border-left: 5px solid #5cb85c;
+	background: #337ab7;
+	color: #fff;
+}
+#main2 #con>.ul2>li>i{
+	position: absolute;
+	display: inline-block;
+	width: 15px;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 5px;
+	text-indent: 0px;
+}
+#main2 #con>.ul2>li>i:nth-child(1){
+	right: 2px;
+}
+#main2 #con>.ul2>li>i:nth-child(1):hover,#main2 #con>.ul2>li>.edit2{
+	color: #4ed361;
+	cursor: pointer;
+}
+#main2 #con>.ul2>li>i:nth-child(2){
+	right: 24px;
+}
+#main2 #con>.ul2>li>i:nth-child(2):hover{
+	color:rgba(196,140,228,1.00);
+	cursor: pointer;
+}
+#main2 #con .jiabm{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	width: 280px;
+	top: 80%;
+	margin-right: -150px;
+	right: 30%;
+	background: #337ab7;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 18px;
+	transition: all 0.3s;
+}
+#main2 #con .tishi{
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	width: 280px;
+	top: 35%;
+	margin-right: -150px;
+	right: 30%;
+	color: #777;
+	font-size: 18px;
+	transition: all 0.3s;
+	z-index: 1;
+}
+#main2 #con .jiabm:hover{
+	color: #337ab7;
+	background: #F8F8F8;
+	border: 2px solid #E7E7E7;
+	cursor: pointer;
+}
+#main2 h3{
+	position: absolute;
+	right: 0px;
+	display: inline-block;
+	width: 80%;
+	height: 38px;
+	line-height: 38px;
+	font-weight: 100;
+	text-indent: 8px;
+	margin: 20px 0px;
+	font-size: 26px;
+	border-left: 4px solid #337AB7;
+}
+/**********************************************con2**********************/
+#main2 #con2 {
+	position: relative;
+	top: 0px;
+	left: 18%;
+	width: 82%;
+	overflow: hidden;
+	height: 100%;
+	min-width: 900px;
+}
+#main2 #con2 #div1{
+	position:relative;
+	left:50%;
+	margin-left:-50%;
+	height:100%;
+	width:100%;
+	min-width:1000px;
+	top: 12%;
+}
+#main2 #con2 #top{
+	height:50px;
+	width:100%;
+}
+#main2 #con2 #top>ul{
+	width: 100%;
+	list-style: none;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+#main2 #con2 #top>ul>li{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display: inline-block;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	font-size: 16px;
+	vertical-align: middle;
+}
+#main2 #con2 #top>ul>li:nth-child(1){
+	width: 40px;
+}
+#main2 #con2 #top>ul>li:nth-child(2){
+	width: 15%;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+#main2 #con2 #top>ul>li:nth-child(2)>input{
+	width: 140px;
+	height: 20px;
+	text-indent: 2px;
+	vertical-align: middle;
+}
+#main2 #con2 #top>ul>li:nth-child(3){
+	vertical-align: middle;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 20px;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	color: #fff;
+	cursor: pointer;
+	background: #60C559;
+	border-radius: 2px;
+}
+#main2 #con2 #top>ul>li:nth-child(4){
+	vertical-align: middle;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 20px;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	color: #000;
+	background: #fff;
+	border: 1px solid #777;
+	cursor: pointer;
+	border-radius: 2px;
+}
+#main2 #con2 #center{
+	width: 100%;
+	height: 63%;
+	max-height: 672px;
+	overflow: auto;
+	margin-top: 10px;
+	padding: 0px;
+	display:none;
+}
+#main2 #con2 #center>table{
+	width: 60%;
+	margin: 0px auto;
+	padding: 0px;
+	background: #fff;
+	text-align: center;
+}
+#main2 #con2 #center>table th,#main2 #con2 #center>table td{
+	text-align: center;
+}
+#main2 #con2 #center>table tr td i:nth-child(1):hover{
+	color:rgba(45,196,48,1.00);
+	cursor: pointer;
+}
+#main2 #con2 #center>table tr td i:nth-child(2):hover{
+	color:rgba(209,19,23,1.00);
+	cursor: pointer;
+}
+#main2 #con2 #tablefoot{
+	height:50px;
+	width:100%;
+	display:none;
+}
+#main2 #con2 #tablefoot>ul{
+	width: 100%;
+	list-style: none;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 0px;
+}
+#main2 #con2 #tablefoot>ul>li{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display: inline-block;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	font-size: 16px;
+}
+#main2 #con2 #tablefoot>ul>li:nth-child(1){
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-right: 20px;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	color: #000;
+	background: #fff;
+	border: 1px solid #777;
+	cursor: pointer;
+	border-radius: 2px;
+}
+#main2 #con2 #tablefoot>ul>li:nth-child(2){
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-right: 20px;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	color: #000;
+	background: #fff;
+	border: 1px solid #777;
+	cursor: pointer;
+	border-radius: 2px;
+}
+#main2 #con2 #tablefoot>ul>li:nth-child(3){
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+#main2 #con2 #tablefoot>ul>li:nth-child(4){
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+#main2 #con2 #tablefoot>ul>li:nth-child(5){
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+#main2 #con2 #tablefoot>ul>li:nth-child(6){
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+#main2 #con2 #tablefoot>ul>li:nth-child(6)>input{
+	width: 20px;
+	height: 20px;
+	text-indent: 2px;
+	vertical-align: middle;
+}
+#main2 #con2 #tablefoot>ul>li:nth-child(7){
+	width: 20px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+#main2 #con2 #tablefoot>ul>li:nth-child(8){
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	color: #fff;
+	cursor: pointer;
+	background: #337AB7;
+	border-radius: 2px;
+}
+/***********************************************************添加hHR*****************/
+#reg {
+	width: 358px;
+	height: 262px;
+	border: 1px solid #DDD;
+	display: none;
+	overflow: hidden;
+	z-index:999;
+}
+#reg>.login_head {
+	width: 358px;
+	height: 37px;
+	background: #F5F5F5;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-bottom: 1px solid #DDD;
+	line-height: 37px;
+}
+
+#reg>.login_head>h1 {
+	display: inline-block;
+	font-size: 18px;
+	height: 37px;
+	line-height: 37px;
+	margin: 0px;
+	margin-left: 15px;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	font-weight: 100;
+}
+
+#reg>.login_head>span {
+	display: inline-block;
+	font-size: 12px;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	color: #777;
+}
+
+#reg>.login_con {
+	position: absolute;
+	top: 38px;
+	left: 0px;
+	width: 358px;
+	height: 225px;
+}
+
+#reg>.login_con>input {
+	display: block;
+	width: 302px;
+	margin: 0px auto;
+	padding: 6px 12px;
+	margin-top: 15px;
+	color: #999;
+}
+
+#reg>.login_con>p {
+	position: absolute;
+	bottom: 10px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	width: 110px;
+	height: 40px;
+	font-size: 18px;
+	background: #337AB7;
+	border-radius: 2px;
+	margin-top: 20px;
+	letter-spacing: 4px;
+}
+
+#reg>.login_con>p:hover {
+	background: #5493CA;
+}
+
+#reg>.login_con>.loginin {
+	left: 35px;
+}
+
+#reg>.login_con>.reg {
+	right: 35px;

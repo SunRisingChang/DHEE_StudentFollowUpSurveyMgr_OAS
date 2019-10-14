@@ -1,0 +1,296 @@
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html, body {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+#main1 {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	z-index: 999;
+}
+/*测导航栏*/
+#main1 #src-left-nav {
+	position: fixed;
+	height: 100%;
+	width: 18%;
+	min-width: 175px;
+	background: #F8F8F8;
+	top: 51px;
+	left: 0px;
+	border-right: 1px solid #e7e7e7;
+}
+#main1 #src-left-nav>ul {
+	height: auto;
+	width: 100%;
+	list-style: none;
+	margin: 0px;
+}
+#main1 #src-left-nav>ul>li {
+	color: #337AB7;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-family: "Microsoft YaHei", 微软雅黑;
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 14px;
+	cursor: pointer;
+}
+#main1 #src-left-nav>ul>li:hover {
+	background: #eeeeee;
+}
+#main1 #src-left-nav>ul>li>i {
+	display: inline-block;
+	text-align: center;
+	width: 20px;
+	margin: 0px 4px 0px 10%;
+}
+/*内容区*/
+#main1 #con {
+	position: absolute;
+	top: 0px;
+	left: 18%;
+	width: 82%;
+	overflow: hidden;
+	height: 100%;
+	min-width: 900px;
+}
+/*模块1*/
+#main1 #con #dowebok {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	transform: translateY(0%);
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; /* Firefox 4 */
+	-webkit-transition: all 0.5s; /* Safari 和 Chrome */
+	-o-transition: all 0.5s; /* Opera */
+}
+#main1 #con #dowebok .section {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#main1 #con #dowebok .section select{
+	width:128px;
+}
+#main1 #con #dowebok .section select option{
+	text-align: center;
+}
+#main1 #con #dowebok .section>h3{
+	float: right;
+	display: inline-block;
+	width: 97%;
+	height: 38px;
+	line-height: 38px;
+	font-weight: 100;
+	text-indent: 8px;
+	margin: 20px 0px;
+	font-size: 26px;
+	border-left: 4px solid #337AB7;
+}
+#main1 #con #dowebok .section>div{
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	margin-left: -47.5%;
+	width: 95%;
+	height: 85%;
+	padding-top: 10%;
+}
+#main1 #con #dowebok .section>div>ul{
+	list-style: none;
+	overflow: hidden;
+	font-size: 16px;
+	
+}
+#main1 #con #dowebok .section>div>ul>li{
+	width:100%;
+	height: 30px;
+	margin-top: 20px;
+	line-height: 30px;
+	padding: 0px;
+}
+#main1 #con #dowebok .section>div>ul>li>input{
+	display: inline;
+	line-height: 28px;
+	height:28px;
+	border: 1px solid #777;
+	width: 280px;
+}
+#main1 #con #dowebok .section>div>ul:nth-child(1){
+	float: left;
+	width: 40%;
+	text-align: right;
+}
+#main1 #con #dowebok .section>div>ul:nth-child(2){
+	float: right;
+	width: 58%;
+}
+#main1 #con #dowebok .section:nth-child(1)>div>ul:nth-child(2)>li:nth-child(4)>div,#main1 #con #dowebok .section:nth-child(2)>div>ul:nth-child(2)>li:nth-child(2)>div,#main1 #con #dowebok .section:nth-child(5)>div>ul:nth-child(2)>li:nth-child(1)>div{
+	width: 40px;
+	display: inline-block;
+}
+#main1 #con #dowebok .section:nth-child(1)>div>ul:nth-child(2)>li:nth-child(4)>div>*,#main1 #con #dowebok .section:nth-child(5)>div>ul:nth-child(2)>li:nth-child(1)>div>*,#main1 #con #dowebok .section:nth-child(2)>div>ul:nth-child(2)>li:nth-child(2)>div>*{
+	cursor: pointer;
+}
+
+#main1 #con #dowebok .section:nth-child(2)>div{
+	position: absolute;
+	top: 62px;
+	left: 50%;
+	margin-left: -47.5%;
+	width: 95%;
+	height: 85%;
+	padding-top: 0%;
+}
+#main1 #con #dowebok .section:nth-child(5)>div{
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	margin-left: -47.5%;
+	width: 95%;
+	height: 85%;
+	padding-top: 2%;
+}
+#main1 #con #dowebok .section:nth-child(2)>div>ul>li>input,#main1 #con #dowebok .section:nth-child(3)>div>ul>li>input,#main1 #con #dowebok .section:nth-child(4)>div>ul>li>input,#main1 #con #dowebok .section:nth-child(5)>div>ul:nth-child(2)>li:nth-child(5)>input,#main1 #con #dowebok .section:nth-child(5)>div>ul:nth-child(2)>li:nth-child(6)>input,#main1 #con #dowebok .section:nth-child(5)>div>ul:nth-child(2)>li:nth-child(8)>input{
+	text-indent:8px;
+}
+#main1 #con #dowebok .section:nth-child(7)>div>h3{
+	text-align: center;
+}#main1 #con #dowebok .section:nth-child(7)>div>p{
+	margin-top: 20px;
+	text-align: center;
+}
+#main1 #con #dowebok .section:nth-child(6)>div{
+padding-top: 0px;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con{
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -40%;
+	width: 80%;
+	max-height: 500px;
+	overflow: auto;
+	z-index: 999;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con>table{
+	width: 100%;
+	margin-bottom: 20px;
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con>table>thead{
+	width: 100%;
+	background:#ccc;
+	text-align: center;
+	height: 40px;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con>table>thead>tr{
+	background:#ccc;
+	text-align: center;
+	height: 20px;
+	border-bottom: 1px solid #777;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con>table>thead>tr>td{
+	border-right: 1px solid #777;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con>table>tbody{
+	width: 100%;
+	background:#ccc;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con>table>tbody>tr{
+	background:#fff;
+	text-align: center;
+	height: 20px;
+	border-bottom: 1px solid #777;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con>table>tbody>tr:hover{
+	background:rgba(241,241,241,1.00);
+	cursor: pointer;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con>table>tbody>tr:nth-child(even){
+	background:rgba(241,241,241,1.00);
+	cursor: pointer;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con>table>tbody>tr>td{
+	border-right: 1px solid #777;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con>table>tbody>tr>td:nth-child(7){
+	color:#D02C2D;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con .input ul:nth-child(1){
+	float: left;
+	width: 35%;
+	text-align: right;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con .input ul:nth-child(2){
+	float: right;
+	width: 63%;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con .input ul{
+	list-style: none;
+	overflow: hidden;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con .input ul>li{
+	width:100%;
+	height: 30px;
+	margin-top: 20px;
+	line-height: 30px;
+	padding: 0px;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con .input ul>li>input{
+	display: inline;
+	line-height: 28px;
+	height:28px;
+	border: 1px solid #777;
+	width: 280px;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con .input ul:nth-child(2)>li:nth-child(4)>input,#main1 #con #dowebok .section:nth-child(6)>div .table_con .input ul:nth-child(2)>li:nth-child(5)>input{
+	text-indent: 8px;
+}
+#main1 #con #dowebok .section:nth-child(6)>div .table_con>.input>ul>li>p{
+	width: 280px;
+	height:100%;
+	line-height: 30px;
+	text-align: center;
+	background:#42C567;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+#src-left-nav>p{
+	position: relative;
+	display: inline-block;
+	width: 60%;
+	height: 30px;
+	border-radius: 2px;
+	line-height: 30px;
+	background: #42c567;
+	text-align: center;
+	color: #fff;
+	margin-top: 40px;
+	left: 50%;
+	margin-left: -30%;
+	cursor: pointer;
+}
+#src-left-nav>p:hover{
+	background: #4caf50;
+}

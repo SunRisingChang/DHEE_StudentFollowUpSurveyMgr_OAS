@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="false" /><!--struts.devMode表示Struts的开发模式，值为true时，项目更改立即生效 -->
+	<constant name="struts.multipart.maxSize" value="5000000"></constant>
+	<constant name="struts.multipart.saveDir" value="/upload"></constant>
+
+	<package name="admin" namespace="/" extends="struts-default">
+		<action name="admin_*" class="com.dhee.action.AdminAction"
+			method="{1}">
+		</action>
+		<action name="adminInit_*" class="com.dhee.action.AdminAction"
+			method="{1}">
+		</action>
+	</package>
+
+	<package name="hr" namespace="/" extends="struts-default">
+		<action name="hr_*" class="com.dhee.action.HRUserAction"
+			method="{1}">
+		</action>
+		<action name="hrInit_*" class="com.dhee.action.HRUserAction"
+			method="{1}">
+		</action>
+	</package>
+
+	<package name="file_O" namespace="/" extends="struts-default">
+		<action name="upload" class="com.dhee.tools.UploadAction"
+			method="updata">
+		</action>
+		<action name="download" class="com.dhee.tools.DownloadAction">
+			<result type="stream">
+				<param name="contentDisposition">attachment;filename="${tempName}"</param>
+				<param name="inputName">downloadFile</param>
+			</result>
+		</action>
+	</package>
+
+</struts>
